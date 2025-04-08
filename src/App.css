@@ -1,0 +1,78 @@
+/* Outer container to center everything vertically and horizontally */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  background-color: white;
+}
+
+/* Inner container that holds the color picker */
+.color-picker-container {
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Increased shadow */
+}
+
+/* Title Styling */
+.title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+/* Flexbox for color wheel and box */
+.picker-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container for color box and code */
+.color-box-container {
+  text-align: center;
+}
+
+/* Color box style */
+.color-box {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Color code text */
+.color-code {
+  font-size: 20px;
+  font-weight: bold;
+  color: #555;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .picker-content {
+    flex-direction: column;
+  }
+
+  .color-box {
+    margin-top: 20px;
+  }
+}
+
+/* .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; Full viewport height for centering
+  background-color: #f0f0f0;
+  border-radius: 5px;
+} */
